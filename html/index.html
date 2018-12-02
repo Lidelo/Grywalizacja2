@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../css/indexCSS.css">
+    <title>Web Journey</title>
+    <script src="../jquery.js"></script>
+    <script src="../js/indexJS.js"></script>
+</head>
+<body class="preload">
+<div>
+    <button id="register-event" class="register-button">Zarejestuj się</button>
+    <div class=" mt-20 content col-xs-6 col-sm-6 col-lg-4">
+        <form action="../php/loginLogic.php" method="post">
+            <h2>Web journey</h2>
+            <div class="img-container">
+                <img src="../images/Avatar.png" alt="avatar" class="avatar">
+                <img src="../images/css3.png" alt="avatar" class="avatar">
+            </div>
+            <div class="container-login">
+                <label><b>Nazwa użytkownika:</b></label>
+                <input id="username" type="text" name="username" placeholder="login" required>
+                <label><b>Hasło:</b></label>
+                <input id="password" type="password" name="password" placeholder="********" required>
+                <button id="login" name="login">Login</button>
+            </div>
+            <div class="container-buttons" style="">
+                <button class="cancel-button-login" type="reset">Anuluj</button>
+                <button class="reset-password" id="forgotPassword" type="button">Zresetuj hasło?</button>
+            </div>
+        </form>
+    </div>
+    <div id="id01" class="modal">
+        <form method="post" class="modal-content" action="../php/registerLogic.php">
+            <div id="modal-box" class="container">
+                <h1>Zarejestruj się</h1>
+                <p>Uzupełnij pola formularza</p>
+                <hr>
+                <label><b>Email</b></label>
+                <input id="email-modal" type="text" placeholder="exapmle@example.com" name="mail" required>
+                <label><b>Nazwa użytkownika</b></label>
+                <input id="login-modal" type="text" placeholder="TheLegend27" name="username" required>
+                <label><b>Hasło</b></label>
+                <input id='password-modal' type="password" placeholder="********" name="password" required>
+                <label><b>Powtórz hasło</b></label>
+                <input id='password-modal-repeat' type="password" placeholder="********" name="password-repeat"
+                       required>
+                <div>
+                    <button type="submit" class="register-button-modal" name="register">Rejestracja</button>
+                    <button type="reset" class="cancel-button-modal">Anuluj</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="forgotPasswordModal" class="modal">
+        <form action="../php/forgotPassword.php" method="post" class="modal-content">
+            <div id="forgot-modal-box" class="container">
+                <h1>Zresetuj swoje hasło</h1>
+                <p>Nowe, losowe hasło wyślemy Ci mailem</p>
+                <hr>
+                <label><b>Nazwa użytkownika</b></label>
+                <input id="forgot-username-modal" type="text" placeholder="TheLegend27" name="forgot-username" required>
+                <div>
+                    <button type="submit" name="reset">Zresetuj</button>
+                    <button type="reset" class="cancel-forgot-button-modal">Anuluj</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

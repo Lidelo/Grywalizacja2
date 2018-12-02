@@ -1,0 +1,270 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-tr 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  font-family: Arial, Helvetica, sans-serif;
+/ / background: url("https://mojly.com/wp-content/uploads/2017/08/weird-fashion-dress-clothes-pics-people-weird-fashion-13.jpg") no-repeat center;
+  background-size: cover;
+  background-image: url("../images/background.png");
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+.content {
+  transform: scale(0.9);
+  width: 30%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  background-color: #fff;
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancel-button-login {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.cancel-button-modal {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container-buttons {
+  background-color: #f1f1f1;
+  padding: 16px;
+}
+
+.register-button-modal {
+  width: auto;
+  padding: 10px 18px;
+}
+
+.img-container {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.container-login {
+  padding: 16px;
+}
+
+.reset-password {
+  width: auto;
+  color: white;
+  padding: 10px 18px;
+}
+
+.cancel-forgot-button-modal {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+a:active {
+  color: orange;
+}
+
+a:visited {
+  color: black;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.register-button {
+  position: sticky;
+  margin: 0 0 0 0;
+  float: right;
+  width: 20%;
+}
+
+button:focus {
+  outline: 0;
+}
+
+#leaderboard-parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#leaderboard {
+  width: 1000px;
+  height: 544px;
+  background-image: url("../images/paper-dialog.png");
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0.8);
+}
+
+table th {
+  padding: 10px 20px 10px 20px;
+
+}
+
+#tabela {
+  margin-top: 10px;
+  transform: scale(1.4);
+  padding: 20px;
+  border-collapse: collapse;
+
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: rgba(204, 188, 63, 0.4)
+}
+
+td {
+  border-collapse: collapse;
+  padding: 5px 15px 5px 15px;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.modal:target {
+  transition: opacity 7s ease-in;
+  transition-delay: 2s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 40%;
+  transform: scale(0.9);
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.container {
+  padding: 16px;
+}
+
+img.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+  scale(0, 0);
+    transform: translateY(-100%);
+  }
+  100% {
+  scale(1, 1);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+}
+
+@keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+}
